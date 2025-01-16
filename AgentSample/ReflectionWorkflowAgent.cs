@@ -61,7 +61,7 @@ public class ReflectionWorkflowAgent
         - 準確度（透過修正新增、誤譯、遺漏或未翻譯文字的錯誤）
         - 流暢度（透過應用{正體中文}語法、拼字和標點規則，並確保沒有不必要的重複）
         - 風格（確保翻譯反映源文本的風格並考慮任何文化背景）
-        - 術語（確保術語的使用一致並反映源文本領域；並且僅確保使用等效的習語{正體中文}）
+        - 術語（確保術語的使用一致並反映原文本領域；並且僅確保使用等效的用語{正體中文}）
 
 
         列出具體的、有幫助的和建設性的建議以改進翻譯。
@@ -151,7 +151,6 @@ public class ReflectionWorkflowAgent
 
         ChatMessageContent message = new(AuthorRole.User, userPrompt);
         chat.AddChatMessage(message);
-        //Console.WriteLine(message);
 
         await foreach (ChatMessageContent responese in chat.InvokeAsync())
         {

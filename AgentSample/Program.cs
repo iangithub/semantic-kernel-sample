@@ -35,9 +35,9 @@ Console.WriteLine("\n\n Hello, .NET Conf 2024 ! \n\n");
 // await agent.ChatCompletionAgentAsync();
 
 //Delegate agent
-var agent = new DelegateAgent();
-await agent.ChatCompletionAgentAsync();
+// var agent = new DelegateAgent();
+// await agent.ChatCompletionAgentAsync();
 
 //complex agent
-// var agent = new ComplexAgent();
-// await agent.ChatCompletionAgentAsync();
+var agent = new ComplexAgent();
+await agent.ChatCompletionAgentAsync();
